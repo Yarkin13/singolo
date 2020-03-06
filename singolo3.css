@@ -1,0 +1,217 @@
+.wrapper {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+body {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.content {
+    height: 650px;
+    background-color: #f06c64;
+    border-bottom: solid 3.5px #ea676b;;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    padding-top: 68px;
+    margin-left: 39px;
+    margin-bottom: 20px;
+    margin-top:0px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    margin-left: 40px;
+    margin-top: 27px;
+}
+
+.footer {
+    height: 76px;
+    background-color: #2d303a;
+    display: flex;
+}
+
+.footer p {
+    color: #666d89;
+    font-family: "Lato";
+    font-size: 12px;
+    margin-left: 42px;
+    margin-top: 30px;
+}
+
+.facebook {
+    margin-left: 690px;
+    height: 35px;
+    margin-top: 22px;
+}
+
+.links { 
+    margin-left: 5px;
+    height: 35px;
+    margin-top: 22px;
+}
+
+.forms {
+    display: flex;
+}
+.form-name {
+    width:605px;
+    font-size: 12px;
+    line-height: 35px;
+    font-family: "Lato";
+    font-weight: 400;
+    background-color: #d6564f;
+    border: 0;
+    padding-left: 15px;
+    margin-left: 40px;
+    margin-top:26px;
+    border-radius: 5px;
+    color: #f08586
+}
+
+::-webkit-input-placeholder {
+    color:  #f08586;
+}
+
+
+.form-email {
+    width:605px;
+    font-size: 12px;
+    line-height: 35px;
+    color: #f08586;
+    font-family: "Lato";
+    font-weight: 400;
+    background-color: #d6564f;
+    border: 0;
+    padding-left: 15px;
+    margin-left: 40px;
+    margin-top:17px;
+    border-radius: 5px;
+}
+
+textarea {
+    width:603px;
+    font-size: 12px;
+    line-height: 33.5px;
+    color: #f08586;
+    font-family: "Lato";
+    font-weight: 400;
+    background-color: #d6564f;
+    border: 0;
+    padding-left: 15px;
+    padding-top: 0px;
+    margin-left: 40px;
+    margin-top:17px;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 900;
+    margin-left: 20px;
+    margin-top: 26px;
+    margin-bottom: 0px
+}
+
+.contact-info p {
+    height: 90px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    padding-right: 0px;
+    margin-bottom: 0px;
+    width: 300px;
+}
+
+.facebook {
+    opacity: 0.6;
+}
+
+.links {
+    opacity: 0.6;
+}
+
+.footer .facebook:hover  {
+    opacity: 1;
+}
+
+.footer .links:hover  {
+    opacity: 1;
+}
+
+.location-tel-mail {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location {
+    height: 12px;
+    position: relative;
+    left: 23px;
+    bottom: -23px;
+}
+
+.location-tel-mail .location-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 35px;
+    margin-top: 18px;
+}
+
+.tel {
+    height: 11px;
+    position: relative;
+    left: -321px;
+    bottom: -41px;
+}
+
+.location-tel-mail .tel-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 43px;
+    margin-top: 2px;
+    
+}
+
+.mail {
+    height: 8px;
+    position: relative;
+    left: -323px;
+    bottom: -25px;
+}
+
+.location-tel-mail .mail-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 43px;
+    margin-top: 1px;
+}
+
+.button {
+    background-color: #d6564f;
+    color: wheat;
+    border: 0;
+    border-radius: 3px;
+    font-family: lato;
+    margin-left: 590px;
+    margin-top: 0px;
+}
