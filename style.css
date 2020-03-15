@@ -2,9 +2,14 @@
     font-family: Lato; /* Гарнитура шрифта */
     src: url(./assets/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
 }
-
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
 body {
+    min-width: 1020px;
     margin: 0;
+    padding: 0;
 }
 .wrapper {
     margin: 0 auto;
@@ -38,7 +43,8 @@ body {
     background-color: #2d303a;
     margin: 0 auto;
     height: 90px;
-    border-bottom: 5px solid #323746;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 ul {
@@ -46,6 +52,9 @@ ul {
     justify-content: space-around;    
 }
 
+.active {
+    color:#dc655f;
+}
 li:hover {
 	color: #3a7999;
     background: rgba(0,0,0,0)
@@ -56,7 +65,7 @@ li:hover {
     margin-top: 30px;
     font-size: 12px;
     line-height: 6px;
-    color: #f06c64;
+    
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
@@ -67,7 +76,6 @@ li:hover {
     margin-top: 30px;
     font-size: 12px;
     line-height: 6px;
-    color: #ffffff;
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
@@ -78,7 +86,6 @@ li:hover {
     margin-top: 30px;
     font-size: 12px;
     line-height: 6px;
-    color: #ffffff;
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
@@ -89,7 +96,6 @@ li:hover {
     margin-top: 30px;
     font-size: 12px;
     line-height: 6px;
-    color: #ffffff;
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
@@ -100,7 +106,6 @@ li:hover {
     margin-top: 30px;
     font-size: 12px;
     line-height: 6px;
-    color: #ffffff;
     font-family: "Lato";
     font-weight: 700;
     text-align: left;
@@ -183,38 +188,40 @@ li {
     display: flex;
     margin-left: 53px;
     position: relative;
-    margin-top: 53px; 
+    margin-top: 0px; 
     width: 250px;   
 }
 
 .phone-horizontal {
     display: flex;
-    width:600px;
+    width:500px;
+    margin-right: 100px;
 }
 
 .slider-right{
     display: flex;
     margin-top: 281px ;
-    margin-right: 1000px;
     opacity:0.5;
 }
 
 .content {
-    display: flex;
+    border-bottom: 5px solid #ea676b;
+    width: 1020px;
     height: 595px;
     background-color: #f06c64;
-    border-bottom: 5px solid #ea676b;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
 }
 
-.phone-shadow-vertical {
-    position: absolute;
-}
+
+
 
 .phone-base-vertical {
     right: 241px;
     top: -1px;
     height: 460px;
-    position: absolute;
+    z-index: 1;
 }
 
 .phone-layer-vertical {
@@ -222,7 +229,7 @@ li {
     height: 340.8px;
     top: 60.6px;
     width: 192.7px;
-    position: absolute;
+    z-index: 2;
 }
 
 .phone-vertical IMG {
@@ -235,29 +242,28 @@ li {
 
 .phone-shadow-horizontal {
     right: -64px;
-    top: 174px;
     height: 240px;
-    position: absolute;
 }
 
 .phone-base-horizontal {
     right:421px;
-    top: 173px;
+    
     height: 218px;
-    position: absolute;
 }
 
 .phone-layer-horizontal {
     right: 821.3px;
     width: 349px;
-    top: 187px;
+    top: 14px;
     height: 191px;
-    position: absolute;
+    z-index: 2;
 }
 
 .footer {
     height: 200px;
     background-color: #f2f2f2;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 .footer h2 {
@@ -288,6 +294,8 @@ li {
     height: 295px;
     background-color: #f2f2f2;
     border-bottom: 5px solid #ffffff;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 .custom-deign{
@@ -402,10 +410,6 @@ h3 {
     width: 1020px;
 }
 
-body {
-    margin: 0 auto;
-    width: 1020px;
-}
 
 .portfolio1 h1 {
     font-size: 30px;
@@ -490,50 +494,10 @@ body {
     background: rgba(0,0,0,0)
 }
 
-.img1 {
-    display: flex;
-    margin-top: 19px;
-    margin-left: 40px;
-    height: 187px;
-}
-
-.img2 {
-    display: flex;
-    margin-top: 19px;
-    margin-left: 20px;
-    height: 187px;
-}
-
-.img3 {
-    display: flex;
-    margin-top: -47px;
-    margin-left: 40px;
-    height: 187px;
-}
-
-.img4 {
-    display: flex;
-    margin-top: -47px;
-    margin-left: 20px;
-    height: 187px;
-}
-
-.img5 {
-    display: flex;
-    margin-top: -47px;
-    margin-left: 40px;
-    height: 187px;
-}
-
-.img6 {
-    display: flex;
-    margin-top: -47px;
-    margin-left: 20px;
-    height: 187px;
-}
-
 .about-us-text {
     background-color:#f2f2f2;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -566,6 +530,8 @@ h2 {
 
 .photos {
     background-color: #f2f2f2;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 .photo1 {
@@ -589,6 +555,8 @@ h2 {
 .about-peoples {
     display: flex;
     background-color: #f2f2f2;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 .about-peoples h3 {
@@ -663,7 +631,9 @@ h2 {
 
 .links-part2 {
     background-color:#f2f2f2;
-    height:126px
+    height:126px;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 .facebook-part2 {
@@ -708,15 +678,13 @@ h2 {
     width: 1020px;
 }
 
-body {
-    margin: 0 auto;
-    width: 1020px;
-}
 
 .content-part-3 {
     height: 650px;
     background-color: #f06c64;
     border-bottom: solid 3.5px #ea676b;;
+    margin: 0 auto;
+    width: 1020px;
 }
 
 .get-a-quote h4 {
@@ -746,6 +714,8 @@ body {
     height: 76px;
     background-color: #2d303a;
     display: flex;
+    width: 1020px;
+    margin: 0 auto;
 }
 
 .footer2 p {
@@ -921,4 +891,232 @@ textarea {
     font-family: lato;
     margin-left: 590px;
     margin-top: 0px;
+}
+.hidden {
+    display: none;
+}
+
+#message-block {
+    position: fixed;
+    background-color:#0008;
+    width: 100%;
+    height: 100vh;
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+#message {
+    background-color:  #d6564f;
+    top: 50%;
+    left: 50%;
+    width: 25vw;
+    height: 20vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+    opacity: 80%;
+    margin-top: 300px;
+}
+
+#close-btn{
+    width: 10%;
+    height: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#margin {
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.border {
+    border: 5px outset #F06C64; 
+    height: 177px;
+    width: 210px;
+    
+}
+
+.box-shadow-tabs {
+    box-shadow: 0 0 10px #F06C64;
+}
+
+.portfolio__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 940px;
+    max-height: 600px;
+    overflow: hidden;
+    margin-top: 18.5px;
+  }
+  
+.portfolio__item {
+    flex-shrink: 0;
+    margin-bottom: 20px;
+}
+
+.order {
+      order:1;
+}
+
+.slides {
+
+}
+
+.slide {
+    height: 100%;
+    display: none;
+    position: absolute;
+    animation: 2s ease-in-out;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.active,
+.next {
+    display: flex;
+}
+.next {
+    position: absolute;
+}
+
+.slides{
+    display: flex;
+}
+.control {
+    cursor: pointer;
+}
+
+.arrow {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+}
+
+.to-left {
+    animation-name: right;
+  }
+  
+  .from-right {
+    animation-name: left;
+  }
+  
+  .to-right {
+    animation-name: left;
+    animation-direction: reverse;
+  }
+  
+  .from-left {
+    animation-name: right;
+    animation-direction: reverse;
+  }
+  
+  @keyframes left {
+    from {
+      left: -100%;
+    }
+    to {
+      left: -0%;
+    }
+  }
+  
+  @keyframes right {
+    from {
+      left: 0%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  .control.left {
+    left: 0;
+    right: auto;
+  }
+  
+  .control.right {
+    right: 0;
+    left: auto;
+  }
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.slider {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    height: 594px;
+    width: 1020px;
+}
+
+.allwrap1 {
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+    margin: 0;
+}
+
+.allwrap2 {
+    border-bottom: 5px solid #ea676b;
+    height: 595px;
+    background-color: #f06c64;
+    margin: 0;
+}
+
+.allwrap3 {
+    margin: 0;
+    height: 495px;
+    background-color: #f2f2f2;
+}
+
+.wrapper-portfolio {
+    margin: 0 auto;
+    width: 1020px;
+}
+
+.allwrap4 {
+    background-color: #2d303a;
+    height: 864px;
+    border-bottom: 6px solid #323746;
+}
+
+.allwrap5 {
+    background-color: #f2f2f2;
+    height: 730px;
+    border-bottom: 6px solid #ffffff;
+}
+.allwrap6 {
+    height: 650px;
+    background-color: #f06c64;
+    border-bottom: solid 3.5px #ea676b;
+}
+
+.allwrap7 {
+    height: 76px;
+    background-color: #2d303a;
+}
+
+.hide-layer {
+    display: none;
+}
+
+.black-vertical-layer {
+    position: relative;
+    right: 576px;
+    height: 365px;
+    top: -2px;
+    width: 186.5px;
+    z-index: 1;
+}
+
+.layer-for-second-slider {
+    z-index: 3;
 }
