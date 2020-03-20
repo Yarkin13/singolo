@@ -7,23 +7,22 @@ const TABS = document.getElementById ('tabs')
 //MENU
 
 MENU.addEventListener('click', (event) => {
-    MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-})
-
-MENU.addEventListener('click', (event) => {
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
     event.target.classList.add('active');
 })
 
 //FORM
 
-BUTTON.addEventListener('click', () => {
+document.querySelector('.form1').addEventListener('submit', (event) => {
+    event.preventDefault();
+    if(document.querySelector('.form1').checkValidity()){
     const subject = document.getElementById('subject').value;
     const describe = document.getElementById('describe').value;
     (subject=="") ? document.getElementById('result-subject').innerText='Без темы': document.getElementById('result-subject').innerText = 'Тема: '+subject; 
     (describe=="") ? document.getElementById('result-describe').innerText='Без описания': document.getElementById('result-describe').innerText = 'Описание: '+describe;
     document.getElementById('message-block').classList.remove('hidden');
+    }
+    document.querySelector('.form1').reset();
 })
 
 CLOSE_BUTTON.addEventListener('click', () => {
@@ -35,10 +34,20 @@ CLOSE_BUTTON.addEventListener('click', () => {
 IMAGES.addEventListener('click', (event) => {
     IMAGES.querySelectorAll('img').forEach(el => el.classList.remove('border'));
     let target=event.target;
-    if (target.tagName != 'IMG') return
-    target.classList.add('border');
+    if (target.tagName != 'IMG') return;
+    if (target.classList.contains('border')) {
+        target.classList.remove('border')
+    }
+    console.log(target);
 })
 
+IMAGES.addEventListener('click', (event) => {
+    IMAGES.querySelectorAll('img').forEach(el => el.classList.remove('border'));
+    let target=event.target;
+    if (target.tagName != 'IMG') return;
+    target.classList.add('border');
+    }
+)
 //ACTIVE TABS AND RANDOM IMAGE
 
 TABS.addEventListener('click', (event) => {
@@ -130,3 +139,38 @@ document.getElementById('layer3').addEventListener('click', (event) => {
     event.target.classList.add('hide-layer');
 })
 
+//MENU SCROLL
+
+window.addEventListener('scroll', function() {
+    if(window.pageYOffset>0) {
+    MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+    MENU.querySelector('.home').classList.add('active');
+    }
+    if(window.pageYOffset>500) {
+        MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+        MENU.querySelector('.services').classList.add('active');
+    }
+    if(window.pageYOffset>1100) {
+        MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+        MENU.querySelector('.portfolio').classList.add('active');
+    }
+    if(window.pageYOffset>2000) {
+        MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+        MENU.querySelector('.about').classList.add('active');
+    }
+    if(window.pageYOffset>2550) {
+        MENU.querySelectorAll('li').forEach(el => el.classList.remove('active'));
+        MENU.querySelector('.contact').classList.add('active');
+    }
+  });
+    const anchors = document.querySelectorAll('a[href*="#"]')
+    for (let anchor of anchors) {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault()
+        const blockID = anchor.getAttribute('href');
+        document.getElementById(blockID.replace(/^#/,'')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
+    })
+}
