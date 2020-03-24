@@ -10,6 +10,7 @@
 <body id="home1">
     <div class='allwrap1'>
         <div class="header">
+            <img src="./assets/Burger-menu-icon.png" class='for-mobile-menu'>
            <div class="singolo"><h1>SINGOLO<h1 class="zvezda">*</h1></h1></div>
            <ul id='menu'>
                <a href="#home1" ><li class="home">HOME</li></a>
@@ -174,38 +175,40 @@
             <h2>About Us</h2>
             <p class="p-about-us-text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, totrtor mauris condimentum nibh</p>
         </div>
-        <div class="photos">
-            <img src="./assets/photo.png" class="photo1">
-            <img src="./assets/photo (1).png" class="photo2">
-            <img src="./assets/photo (2).png" class="photo3">
-        </div>
-        <div class="about-peoples">
+        <div class="peoples-container"> 
             <div class="adam-jensen">
+                <img src="assets/photo.png" class="adam-jensen-photo">
                 <h3>Adam Jensen</h3>
                 <p>Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
+                <div id="peoples-links">
+                    <img src="assets/facebook.png" class="link-about">
+                    <img src="assets/google.png" class="link-about">
+                    <img src="assets/twitter.png" class="link-about">
+                    <img src="assets/linkedin.png" class="link-about">
+                </div>
             </div>
             <div class="desmond-miles">
+                <img src="assets/photo (1).png" class="desmond-miles-photo">
                 <h3>Desmond Miles</h3>
                 <p>Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam, viverra lacus ut, ultrices velit.</p>
-            </div>
+                <div id="peoples-links">
+                    <img src="assets/facebook.png" class="link-about">
+                    <img src="assets/google.png" class="link-about">
+                    <img src="assets/twitter.png" class="link-about">
+                    <img src="assets/linkedin.png" class="link-about">
+                </div>
+            </div> 
             <div class="scolara-visari">
-                <h3>Scolara Visari</h3>
+                <img src="assets/photo (2).png" class="scolara-visari-photo">
+                <h3>Scolara Visary</h3>
                 <p>Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
-            </div>
-        </div>
-        <div class="links-part2">
-            <img src="./assets/facebook.png" class="facebook-part2 " style="cursor: pointer;">
-            <img src="./assets/google.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/twitter.png"class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/linkedin.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/facebook.png" class="facebook1-part2 "style="cursor: pointer;">
-            <img src="./assets/google.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/twitter.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/linkedin.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/facebook.png" class="facebook2-part2 " style="cursor: pointer;">
-            <img src="./assets/google.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/twitter.png" class="links1-part2 " style="cursor: pointer;">
-            <img src="./assets/linkedin.png"class="links1-part2 "style="cursor: pointer;">
+                <div id="peoples-links">
+                    <img src="assets/facebook.png" class="link-about">
+                    <img src="assets/google.png" class="link-about">
+                    <img src="assets/twitter.png" class="link-about">
+                    <img src="assets/linkedin.png" class="link-about">
+                </div>
+            </div>  
         </div>
     </div>
     <div class="allwrap6">
@@ -224,8 +227,8 @@
                 </div>
             </div>
             <div class="forms">
-                <div>
-                    <form class="form1">
+                <div class="form1">
+                    <form>
                         <input type="text"  id ="name" required placeholder="Name (Required)" name="name" class="form-name"><br>
                         <input type="email" id = "email" reauired placeholder="Email (Required)" name="email" class="form-email"><br>
                         <input type="text" id = "subject" placeholder="Subject" name="subject" class="form-email"></input><br>
@@ -235,15 +238,13 @@
                 </div>
                 <div class="contact-info" id="contact">
                     <h2>Contact Information</h2>
-                    <p>Quisque henderit parus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi ar aliquet turpis, et consequat felis.</p>
-                        <div class="location-tel-mail">  
-                            <img src="./assets/location.png" class="location">
-                            <p class="location-p">Elm St. 14/05 Lost City</p>
-                            <a href="tel:035283318635"><img src="./assets/phone (1).png" class='tel'></a>
-                            <p class="tel-p">03528 331 86 35</p>
-                            <a href="mailto:info@singolo.com"><img src="./assets/mail.png" class="mail"></a>
-                            <p class="mail-p">info@singolo.com</p>
-                        </div>
+                    <p>Quisque henderit parus dapibus, ornare nibh vitae, viver-<wbr>ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi ar aliquet turpis, et consequat felis.</p> 
+                        <a class="contact-link"><img src="./assets/location.png" alt="location"
+                            class="contanct-img" />Elm St. 14/05 Lost City</a>
+                        <a href="tel:03528 331 86 35 " class="contact-link"><img src="./assets/phone (1).png" alt="phone"
+                            class="contanct-img" />03528 331 86 35</a>
+                        <a href="mailto:info@singolo.com" class="contact-link"><img src="./assets/mail.png" alt="mail"
+                            class="contanct-img" />info@singolo.com</a>
                 </div>
 
             </div>

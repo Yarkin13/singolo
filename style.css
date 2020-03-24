@@ -6,6 +6,15 @@ a {
     text-decoration: none;
     color: #ffffff;
 }
+
+.for-mobile-menu {
+    display: none;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;    
+}
 body {
     min-width: 1020px;
     margin: 0;
@@ -18,7 +27,7 @@ body {
 
 .singolo h1 {
     font-size: 25px;
-    line-height: 6px;
+    line-height: 25px;
     color: #ffffff;
     font-family: "Lato";
     font-weight: 1000;
@@ -30,7 +39,7 @@ body {
 
 .singolo .zvezda{
     font-size: 25px;
-    line-height: 6px;
+    line-height: 25px;
     color: #ffffff;
     font-family: "Lato";
     font-weight: 1000;
@@ -47,7 +56,7 @@ body {
     margin: 0 auto;
 }
 
-ul {
+.menu {
     display: flex;
     justify-content: space-around;    
 }
@@ -387,6 +396,20 @@ h3 {
     position: relative;
 }
 
+
+.contact-link {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 21.6px;
+    color: #f0d8d9;
+    margin-left: 15px;
+  }
+  
+  .contanct-img {
+    margin-right: 11px;
+    margin-left: 2px;
+  }
 .a24-7-support-text {
     margin-left: 40px;
     margin-top: -17px;
@@ -526,47 +549,18 @@ h2 {
     margin-bottom: 0px;
 }
 
-.photos {
-    background-color: #f2f2f2;
-    width: 1020px;
-    margin: 0 auto;
-}
-
-.photo1 {
-    margin-left: 40px;
-    width: 300px;
-    margin-top: 47px;
-}
-
-.photo2 {
-    margin-left: 15px;
-    width: 300px;
-    margin-top: 47px;
-}
-
-.photo3 {
-    margin-left: 17px;
-    width: 300px;
-    margin-top: 47px;
-}
-
-.about-peoples {
+.peoples-container {
     display: flex;
-    background-color: #f2f2f2;
     width: 1020px;
     margin: 0 auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+
 }
 
-.about-peoples h3 {
-    font-size: 18px;
-    line-height: 18px;
-    color: #666d89;
-    font-family: "Lato";
-    font-weight: 900;
+.peoples-container p {
     width: 300px;
-}
-
-.about-peoples p {
+    height: 66px;
     font-size: 12px;
     line-height: 22px;
     color: #767e9e;
@@ -574,101 +568,20 @@ h2 {
     font-weight: 400;
 }
 
-.adam-jensen h3 {
-    margin-left: 40px;
-    margin-top: 13px;
-    margin-bottom: 3px;
-    width: 300px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+.peoples-container div {
+    margin-left: 3%;
 }
 
-.adam-jensen p {
-    margin-top: 0px;
-    width: 320px;
-    padding-left: 40px;
-    padding-top: 7px;
-    margin-bottom: 0px;
+#peoples-links {
+    margin-left: 0px;
 }
 
-.desmond-miles h3 {
-    margin-left: 0;
-    margin-top:13px ;
-    margin-bottom: 3px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.desmond-miles p {
-    padding-left: 0 ;
-    margin-top: 0px;
-    margin-left: 0;
-    width: 300px;
-    padding-top: 7px;
-    margin-bottom: 0px;
-}
-
-.scolara-visari h3 {
-    margin-left: 20px;
-    margin-top: 13px;
-    margin-bottom: 3px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
-
-.scolara-visari p {
-    padding-left: 20px;
-    margin-top: 0px;
-    width: 320px;
-    padding-top: 7px;
-    margin-bottom: 0px;
-}
-
-.links-part2 {
-    background-color:#f2f2f2;
-    height:126px;
-    width: 1020px;
-    margin: 0 auto;
-}
-
-.facebook-part2 {
-    margin-top: 20px;
-    margin-left: 40px;
-    opacity: 0.6;
-}
-
-.facebook1-part2  {
-    margin-top: 20px;
-    margin-left: 165px;
-    opacity: 0.6;
-}  
-
-.facebook2-part2  {
-    margin-top: 20px;
-    margin-left: 165px;
-    opacity: 0.6;
-}
-
-.links1-part2  {
-    opacity: 0.6;
-}
-
-.facebook-part2:hover {
+.link-about:hover{
     opacity: 1;
 }
 
-.facebook1-part2:hover {
-    opacity: 1;
-}
-.facebook2-part2:hover {
-    opacity: 1;
-}
-
-.links1-part2:hover {
-    opacity: 1;
+.link-about {
+    opacity: 0.6;
 }
 
 .wrapper {
@@ -817,22 +730,6 @@ textarea {
     width: 300px;
 }
 
-.facebook {
-    opacity: 0.6;
-}
-
-.links {
-    opacity: 0.6;
-}
-
-.footer2 .facebook:hover  {
-    opacity: 1;
-}
-
-.footer2 .links:hover  {
-    opacity: 1;
-}
-
 .location-tel-mail {
     display: flex;
     flex-wrap: wrap;
@@ -881,6 +778,49 @@ textarea {
     margin-top: 1px;
 }
 
+.facebook {
+    opacity: 0.6;
+}
+
+.links {
+    opacity: 0.6;
+}
+
+.footer2 .facebook:hover  {
+    opacity: 1;
+}
+
+.footer2 .links:hover  {
+    opacity: 1;
+}
+
+.location-tel-mail .location-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 35px;
+    margin-top: 18px;
+}
+
+
+.location-tel-mail .tel-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 43px;
+    margin-top: 2px;
+    
+}
+
+.img-contact {
+    display: block;
+}
+
+.location-tel-mail .mail-p {
+    width: 300px;
+    height: 20px;
+    margin-left: 43px;
+    margin-top: 1px;
+}
+
 .button {
     background-color: yellow;
     color: black;
@@ -889,7 +829,7 @@ textarea {
     font-family: lato;
     margin-left:40px;
     margin-top: 0px;
-    width: 94%;
+    width: 89%;
     height: 7%;
     margin-top: 10px;
 }
@@ -1126,7 +1066,15 @@ textarea {
     z-index: 3;
 }
 
-@media (max-width: 1020px) {
+.adam-jensen-photo {
+    width: 100%;
+}
+
+.adam-jensen {
+    width: 303px;
+}
+
+@media (max-width: 1019px) {
     body {
         min-width: 768px;
     }
@@ -1302,13 +1250,10 @@ textarea {
 
     .about-us-text {
         margin: 0 auto;
-        width: 768px;
+        width: 90%;
+        overflow-wrap: break-word;
     }
 
-    .photos {
-        margin: 0 auto;
-        width: 768px;
-    }
 
     .about-peoples {
         margin: 0 auto;
@@ -1320,125 +1265,146 @@ textarea {
         width: 768px;
     }
 
+    .location-tel-mail {
+        margin-left: 80px;
+    }
+
     .p-about-us-text {
-        max-width: 700px;
+        max-width: 1000px;
+        width: 90%;
+        height: 100%;
+        padding: 0 2.5vw 0 4vw;
+        text-align: justify;
     }
     
-    .photo1 {
-        width: 214px;
+    .peoples-container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 2.5vw 0 4vw;
+        width: 90%;
     }
 
-    .photo2 {
-        width: 214px;
+    .adam-jensen {
+        width: 28%;
+        margin-top: 20px;
+    }
+    
+
+    .desmond-miles {
+        width: 28%;
+        margin-top: 20px;
+    } 
+    
+    .desmond-miles-photo {
+        width: 100%;
     }
 
-    .photo3 {
-        width: 214px;
+    .scolara-visari-photo {
+        width: 100%;
     }
 
-    .adam-jensen p {
-        max-width: 214px;
+    .scolara-visari {
+        width: 28%;
+        margin-top: 20px;
     }
 
-    .adam-jensen h3 {
-        max-width: 230px;
-    }
-
-    .desmond-miles p {
-        max-width: 214px;
-    }
-
-    .desmond-miles h3 {
-        max-width: 215px;
-    }
-
-    .scolara-visari h3 {
-        max-width: 214px;
-    }
-
-    .scolara-visari p {
-        max-width: 220px;
-    }
-
-    .facebook-part2 {
-        margin-left: 35px;
-    }
-
-    .facebook1-part2 {
-        margin-left: 75px;
-    }
-
-    .facebook2-part2 {
-        margin-left: 82px;
+    .peoples-container p {
+        width: 210px;
     }
 
     .content-part-3 {
-        width: 768px;
+        width: 100%
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .form1 {
+        width: 55%;
     }
 
     .form-name {
         margin-top: 0;
-        width: 420px;
+        width: 100%;
     }
     .form-email {
         margin-top: 10px;
-        width: 420px;
+        width: 100%;
     }
     textarea {
         margin-top: 10px;
-        width: 420px;
+        width: 100%;
     }
 
     .button {
-        width: 437px;
+        width: 103%;
     }
 
     .contact-info{
         margin-left: 10px;
+        width: 45%;
+    }
+
+    .contacts {
+        list-style: none;
+        padding: 0;
+        font-size: 12px;
+        line-height: 22px;
+        color: #f0d8d9;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
+    }
+    
+    .contacts li {
+        position: relative;
+    }
+    
+    .contacts li span {
+        position: absolute;
+        left: 24px;
+    }
+    
+    .contacts a {
+        position: absolute;
+        left: 24px;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 22px;
+        color: #f0d8d9;
+        font-family: Lato, sans-serif;
+        font-weight: 400;
     }
 
     .contact-info h2 {
         margin-top: 0;
+        margin-left: 80px;
     }
 
     .contact-info p  {
-        width: 230px;
-        height: 35%;
+        width: 70%;
+        margin-left: 80px;
+        height: 110px;
     }
 
-    .location-tel-mail .location-p {
-        margin-top: 10px;
-        margin-left: 40px;
-    }
+    .contact-link {
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 21.6px;
+        color: #f0d8d9;
+        margin-left: 80px;
+      }
+      
+      .contanct-img {
+        margin-right: 11px;
+        margin-left: 2px;
+      }
+      
     
-    .location {
-        height: 12px;
-        left: 20px;
-        bottom: -27px;
-    }
-
-    .location-tel-mail .tel-p {
-        margin-left: 40px;
-        margin-top: -10px;
-    }
-
-    .location-tel-mail .mail-p {
-        margin-left: 40px;
-        margin-top: -10px;
-    }
-
-    .tel {
-        left: 18px;
-        bottom: -11px;
-    }
-
-    .mail {
-        left: 18px;
-        bottom: -9px;
-    }
-
     .allwrap5 {
         height: 663px;
+        width: 100%;
     }
 
     .allwrap6 {
@@ -1446,7 +1412,7 @@ textarea {
     }
 
     .footer2 {
-        width: 768px;
+        width: 100%;
     }
 
     .footer2 p {
@@ -1458,4 +1424,340 @@ textarea {
     }
 }   
 
+@media (max-width: 767px) {
+ 
+    body {
+        min-width: 375px;
+    }
+    .header {
+        width: 375px;
+        align-items: center;
+        height: 65px;
+    }
 
+    ul {
+        display: none;
+    }
+    .singolo {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .singolo h1 {
+       margin-left: 123px;
+       font-size: 20px;
+       margin-top: 23px;
+    }
+
+    .singolo .zvezda {
+        font-size: 15px;
+        margin-top: 16px;
+    }
+
+    .for-mobile-menu {
+        display: flex;
+        width: 25px;
+        height: 20px;
+        position: relative;
+        top:3px;
+        left: 19px;
+    }
+
+    .content {
+        width: 375px;
+    }
+
+    .phone-vertical {
+        width: 100px;
+        height: 170px;
+        margin-bottom: 240px;
+        margin-left: 127px;
+    }
+
+    .phone-base-vertical {
+        height: 100%;
+        right: 190px;
+        top:120px
+    }
+
+    .phone-shadow-vertical {
+        height: 105%;
+        right: 100px;
+        top: 120px;
+    }
+
+    .phone-layer-vertical {
+        height: 73%;
+        width: 70%;
+        top: 143px;
+        right: 265px;
+    }
+
+    .phone-horizontal {
+        width: 170px;
+        height: 90px;
+    }
+
+    .phone-shadow-horizontal {
+        right: 99px;
+        height: 95%;
+        bottom: -13px;;
+    }
+    .phone-base-horizontal {
+        right:270px;
+        height: 80px;
+        width: 100%;
+        bottom: -10px;
+    }
+    
+    .phone-layer-horizontal {
+        right:  418px;
+        width: 73%;
+        top: 15px;
+        height: 78%;
+    }
+
+    .footer {
+        height: 300px;
+        width: 375px;
+    }
+
+    .footer1 {
+        width: 375px;
+        height: 728px;
+    }
+
+    .allwrap2 {
+        height: 220px;
+    }
+
+    .allwrap3 {
+        height: 1028px;
+    }
+
+    .footer h2 {
+        margin-left: 30px;
+    }
+
+    .our-services-text {
+        margin-left: 30px;
+    }
+
+    .pen{
+        right: 17px;
+        top: 12px;
+    }
+
+    .bulb {
+        left: -10px;
+        top: 12px;
+    }
+
+    .inovative-ideas-text {
+        margin-left: 10px;
+    }
+
+    .heart{
+        left: 32px;
+        top: 12px;
+    }
+
+    .phone{
+        left: 32px;
+        top: 10px;
+    }
+
+    .responsive-layout-text{
+        margin-left: 50px;
+    }
+
+    .buble {
+        left: 32px;
+        top: 10px;
+    }
+
+    .star{
+        left: 32px;
+        top: 18px;
+    }
+
+    .custom-deign{
+        margin-left: 50px;
+    }
+
+    .love-is-the-answer-text {
+        margin-left: 50px;
+    }
+
+    .a24-7-support-text {
+        margin-left: 50px;
+    }
+
+    .feel-like-a-star-text{
+        margin-left: 50px;
+    }
+
+    .wrapper-portfolio{
+        width: 375px;
+    }
+
+    .portfolio1 h1 {
+        padding-left: 30px;
+    }
+
+    .portfolio1 p {
+        padding-left: 30px;
+    }
+
+    .menu .all{
+        margin-left: 31px;
+    }
+
+    .portfolio__gallery{
+        padding-left: 30px;
+        grid-template-rows: 128px 128px 128px 128px;
+        grid-template-columns: 151px 151px;
+        grid-gap: 20px 20px;
+        margin-top: 19px;
+        max-height: 590px;
+        overflow: visible;
+    }
+
+    .portfolio__image {
+        width: 151px;
+        height: 128px;
+    }
+
+    .allwrap4 {
+        height: 840px;
+        overflow: hidden;
+    }
+
+
+    .allwrap5 {
+        height: Auto;
+
+    }
+
+    .peoples-container {
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .adam-jensen-photo {
+        width: 96%;
+    }
+
+    .desmond-miles-photo {
+        width: 96%;
+    }
+
+    .scolara-visari-photo {
+        width: 96%;
+    }
+
+    .adam-jensen {
+        width: 100%;
+    }
+    .desmond-miles {
+        width: 100%;
+    }
+
+    .scolara-visari {
+        width: 100%;
+    }
+
+    .peoples-container p {
+        width: 320px;
+    }
+
+
+    h2 {
+        padding-top: 30px;
+    }
+
+    .peoples-container p {
+        margin-bottom: 10px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .desmond-miles {
+        margin-top: 20px;
+    }
+
+    .scolara-visari {
+        margin-top: 20px;
+    }
+
+    .allwrap6 {
+        height: 960px;
+    }
+
+
+    .forms {
+        flex-wrap: wrap;
+    }
+
+
+    .contact-info h2 {
+        width: 300px;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .contact-info p {
+        width: 82%;
+        margin-top: 10px;
+        margin-left: 30px;
+    }
+
+    .form-name {
+        margin-top: 0;
+        width: 100%;
+        margin-left: 30px;
+    }
+    .form-email {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 30px;
+    }
+    textarea {
+        margin-top: 10px;
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    .button {
+        margin-left: 30px;
+    }
+
+    .form1 {
+        width: 80%;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-link {
+        margin-left: 27px;
+    }
+
+    .facebook {
+        margin-left: 30vw;
+    }
+
+    .content-part-3 {
+        border: 0;
+    }
+
+    .peoples-container .div {
+        margin-left: 10vw;
+    }
+
+    .content-part-3 p {
+        width: 85%;
+    }
+}
