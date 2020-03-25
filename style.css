@@ -41,7 +41,7 @@ body {
     font-size: 25px;
     line-height: 25px;
     color: #ffffff;
-    font-family: "Lato";
+    font-family: "Lato ";
     font-weight: 1000;
     margin-left: 1px;
     color: #f06c64;
@@ -57,8 +57,7 @@ body {
 }
 
 .menu {
-    display: flex;
-    justify-content: space-around;    
+    display: flex;  
 }
 
 .active {
@@ -396,6 +395,9 @@ h3 {
     position: relative;
 }
 
+.logo {
+    display: none;
+}
 
 .contact-link {
     display: block;
@@ -1320,7 +1322,7 @@ textarea {
         width: 100%;
     }
 
-    .form1 {
+    .form1-1 {
         width: 55%;
     }
 
@@ -1425,18 +1427,99 @@ textarea {
 }   
 
 @media (max-width: 767px) {
+
+    .home:before {
+        content: " ";
+        background-color: #494e62;
+        width: 2px;
+        height: 2px;
+        border-radius: 50%;
+        margin-top: 3px;
+        margin-left: 13px;
+        margin-right: 14px;    
+        vertical-align: middle;
+    }
+
+    .for-mobile-menu:hover  {
+       cursor: pointer;
+       transform: rotate(90deg)
+    }
+
+    .for-mobile-menu {
+        z-index: 100;
+    }
  
     body {
         min-width: 375px;
     }
     .header {
-        width: 375px;
+        width: 100%;
         align-items: center;
         height: 65px;
     }
 
-    ul {
+    .logo-for-mobile-menu {
+        line-height: 25px;
+        color: #ffffff;
+        font-family: "Lato";
+        font-weight: 1000;
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .home {
+        font-family: "Lato";
+        font-weight: 1000;
+        font-size: 22px;
+    }
+
+    .logo {
+        margin-left: 70px;
+        margin-top: 5px;
+        display: flex;
+    }
+
+    li .zvezda {
+        font-size: 18px;
+        line-height: 25px;
+        color: #ffffff;
+        font-family: "Lato ";
+        font-weight: 1000;
+        margin-left: 1px;
+        color: #f06c64;
+        margin-top: 15px;
+    }
+
+    .for-menu {
+        background-color:#2d303a;
+        display: block;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        height: 100vh;
+        width: 75vw;
+        left: 0;
+    }
+
+
+
+    .header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        height: 65px;
+    }
+
+    .hidden-menu {
         display: none;
+    }
+
+    .home {
+        margin-left:40px;
+        margin-top: 180px;
     }
     .singolo {
         width: 100%;
@@ -1444,10 +1527,38 @@ textarea {
         align-items: center;
     }
 
+    .services {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .portfolio {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .about {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
+    .contact {
+        font-size: 22px;
+        margin-top: 50px;
+        margin-left: 40px;
+    }
+
     .singolo h1 {
-       margin-left: 123px;
        font-size: 20px;
        margin-top: 23px;
+       margin-left: 0;
+    }
+
+    .singolo {
+        width: auto;
     }
 
     .singolo .zvezda {
@@ -1462,6 +1573,8 @@ textarea {
         position: relative;
         top:3px;
         left: 19px;
+        transform: rotate(0deg);
+        transition-duration: 0.5s;
     }
 
     .content {
@@ -1611,7 +1724,11 @@ textarea {
     }
 
     .menu .all{
-        margin-left: 31px;
+        margin-left: 27px;
+    }
+
+    .menu p  {
+        margin-left: 10px;
     }
 
     .portfolio__gallery{
@@ -1733,7 +1850,7 @@ textarea {
         margin-left: 30px;
     }
 
-    .form1 {
+    .form1-1 {
         width: 80%;
     }
 

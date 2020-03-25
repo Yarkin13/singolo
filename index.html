@@ -10,9 +10,10 @@
 <body id="home1">
     <div class='allwrap1'>
         <div class="header">
-            <img src="./assets/Burger-menu-icon.png" class='for-mobile-menu'>
-           <div class="singolo"><h1>SINGOLO<h1 class="zvezda">*</h1></h1></div>
-           <ul id='menu'>
+            <a><img src="./assets/Burger-menu-icon.png" class='for-mobile-menu'></a>
+            <div class="singolo"><h1>SINGOLO<h1 class="zvezda">*</h1></h1></div>
+            <ul id='menu' class="for-menu hidden-menu">
+                <li class="logo" ><p class="logo-for-mobile-menu">SINGOLO</p><p class="zvezda">*</p></li>
                <a href="#home1" ><li class="home">HOME</li></a>
                <a href="#services"><li class="services">SERVICES</li></a>
                <a href="#portfolio"><li class="portfolio">PORTFOLIO</li></a>
@@ -42,7 +43,6 @@
                         </div>
                         <div class="slide">
                             <img  src="./assets/Slide-2.png" style="width: 100%; height: 100%; z-index: 2; position: relative;">
-                            <img src="./assets/black-vertical-layer.png" class="black-vertical-layer" id="layer3">
                         </div>
                     </div>
                     <div class="slider-right control right">
@@ -227,8 +227,8 @@
                 </div>
             </div>
             <div class="forms">
-                <div class="form1">
-                    <form>
+                <div class="form1-1">
+                    <form class="form1">
                         <input type="text"  id ="name" required placeholder="Name (Required)" name="name" class="form-name"><br>
                         <input type="email" id = "email" reauired placeholder="Email (Required)" name="email" class="form-email"><br>
                         <input type="text" id = "subject" placeholder="Subject" name="subject" class="form-email"></input><br>

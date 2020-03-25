@@ -135,9 +135,6 @@ document.getElementById('base2').addEventListener('click', (event) => {
 document.getElementById('layer2').classList.remove('hide-layer');
 })
 
-document.getElementById('layer3').addEventListener('click', (event) => {
-    event.target.classList.add('hide-layer');
-})
 
 //MENU SCROLL
 
@@ -173,4 +170,49 @@ window.addEventListener('scroll', function() {
             block: 'start'
         })
     })
+
+    //MENU MOBILE 
+    
+    document.querySelector('.for-mobile-menu').addEventListener('click', (event)=> {
+        if (MENU.classList.contains('hidden-menu')) {
+        MENU.classList.remove('hidden-menu');
+        document.getElementById('message-block').classList.remove('hidden') 
+        document.getElementById('message').classList.add('hidden') 
+        }
+        else {
+            MENU.classList.add('hidden-menu');
+            document.getElementById('message-block').classList.add('hidden')
+        }
+    })
+
+    MENU.querySelector('.home').addEventListener('click', (event) => {
+        if(document.body.clientWidth<767) 
+        MENU.classList.add('hidden-menu');
+        document.getElementById('message-block').classList.add('hidden')
+        
+    })
+
+    MENU.querySelector('.services').addEventListener('click', (event) => {
+        if(document.body.clientWidth<767) 
+        MENU.classList.add('hidden-menu');
+        document.getElementById('message-block').classList.add('hidden')
+    })
+
+    MENU.querySelector('.portfolio').addEventListener('click', (event) => {
+        if(document.body.clientWidth<767) MENU.classList.add('hidden-menu');
+        document.getElementById('message-block').classList.add('hidden')
+    })
+
+    MENU.querySelector('.about').addEventListener('click', (event) => {
+        if(document.body.clientWidth<767) MENU.classList.add('hidden-menu');
+        document.getElementById('message-block').classList.add('hidden')
+    })
+
+    MENU.querySelector('.contact').addEventListener('click', (event) => {
+        if(document.body.clientWidth<767) MENU.classList.add('hidden-menu');
+        document.getElementById('message-block').classList.add('hidden')
+    })
+    
+
 }
+
